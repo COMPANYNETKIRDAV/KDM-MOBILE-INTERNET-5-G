@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KDM MOBILE</title>
+</head>
+<body background="BackGround.png">
+    <center>  
+    
+        <h1 class="logotipe" style="font-size: 25;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: white;">
+            KDM MOBILE
+        </h1>
+        <br>
+        <h2 class="infa" style="font-size: 23;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color: white;">
+            БЕЗЛИМИТ НА ДЕНЬ-15₽
+            <br>
+            БЕЗЛИМИТ НА МЕСЯЦ-225₽
+            <br>
+            ОДНА ПЕРЕМЕНА-3₽
+            <br>
+            ОДИН УРОК, ИЛИ ОДИН ЧАС-5₽
+            <br>
+            ЗА КАЖДУЮ ПОКУПКУ НАКАПЛИВАЕТСЯ БОНУС-2₽ РУБЛЯ
+            <br>
+            ПОКУПАЙТЕ НАШИ УСЛУГИ, ВЕДЬ У НАС ВСЕГДА ЕСТЬ АКЦИИ!
+            <br>
+            НАШИ ТАРИФЫ САМЫЕ ДЕШЁВЫЕ, ВЕДЬ МЫ НЕ ПРОСИМ ДЕНЬГИ ЗА ИНТЕРНЕТ, НАШ ИНТЕРНЕТ ПОЛНОСТЬЮ БЕЗЛЕМИТЕН
+            <br>
+            ДЕВАЙСЫ ДЛЯ ЗАБРОНИРОВАНИЯ
+            <br>
+            1.IPHONE 7 PLUS
+            <br>
+            2.SAMSUNG GALAXY M21
+            <br>
+            ОБА ДЕВАЙСА ОЧЕНЬ МОЩНЫЕ!
+            <br>
+            ИГРАЙТЕ С РАДОСТЬЮ, ВМЕСТЕ С  KDM MOBILE
+            <br>
+            У НАС ВОЛНА МОБАЙЛ
+            <br>
+            Чек-Лист:
+            <br>
+            ПОКА НИКТО НЕ КУПИЛ
+            <br>
+            Кирилл:+7 978 749 40 42
+            <br>
+            Давид:+7 (978)-676-23-97
+            <br>
+        </h2>
+        <form>
+            <input type="button" id="addButton" button.onclick = handleButtonClick0  value="БРОНЬ 1 ЗЕРКАЛО">
+            </form>
+            <ul id = "catlist">
+            
+            </ul>
+            <script>
+                window.onload = init;
+
+                var button = getElementById("addButton");
+                
+                function init(){
+                    var button = document.getElementById("addButton")
+                    button.onclick = handleButtonClick0;
+                }
+                
+                function handleButtonClick0() {
+                    let firstName = prompt('Как Вас зовут?');
+        let lastName = prompt('Какая ваша фамилия?');
+        alert("Добро пожаловать " + firstName + " " + lastName + " " + "Ваш код брони:23032129024438 Код брони ежедневно меняется но мы учитываем старые коды брони");
+                }
+                </script>
+                <form>
+                    <input type = "text" id="catNameInput3"  size="40"  placeholder="name">
+                    <input type="button" id="addButton3"  value="Add Name">
+                    </form>
+                    <ul id = "catlist3">
+                    
+                    </ul>
+                    <script>
+                        window.onload = init;
+
+function init(){
+    var button = document.getElementById("addButton3")
+    button.onclick = handleButtonClick3;
+}
+                        button.onclick = handleButtonClick3;
+function handleButtonClick3() {
+    var textInput = document.getElementById("catNameInput3");
+    var catName = textInput.value;
+    if(catName == ""){
+        alert("Введите имя, пожалуйста");
+    }else{
+        var ul  =  document.getElementById("catlist3");
+        var li = document.createElement("li");
+        li.innerHTML = catName;
+        ul.appendChild(li);
+        alert("Добавлено новое имя! " + catName);
+    }
+}
+                        
+                        </script>
+   <!-- Put this script tag to the <head> of your page -->
+<script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+
+<!-- Put this div tag to the place, where the Community messages block will be -->
+<div id="vk_community_messages"></div>
+<script type="text/javascript">
+  VK.Widgets.CommunityMessages("vk_community_messages", 210778668, {tooltipButtonText: "Есть вопрос?", expanded: 1});
+</script>
+<!-- Put this script tag to the <head> of your page -->
+  <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+  <script type="text/javascript">
+    VK?.init({apiId: NaN, onlyWidgets: true});
+  </script>
+  
+ <!-- Put this script tag to the <head> of your page -->
+<script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+
+<!-- Put this div tag to the place, where the Group block will be -->
+<div id="vk_groups"></div>
+<script type="text/javascript">
+  VK.Widgets.Group("vk_groups", {mode: 3, no_cover: 1, height: 400, color1: "FFFFFF", color2: "000000", color3: "5181B8"}, 210778668);
+</script>
+</script>
+<br>
+<script>
+  function time () {
+    date = new Date(),
+    h = date.getHours(),
+    m = date.getMinutes(),
+    s = date.getSeconds(),
+  
+    h = (h < 10) ? '0' + h : h,
+    m = (m < 10) ? '0' + m : m,
+    s = (s < 10) ? '0' + s : s;
+  
+    hours  = document.getElementById("id_H");
+    minutes = document.getElementById("id_M");
+    seconds = document.getElementById("id_S");
+              
+    hours.innerHTML = h;   
+    minutes.innerHTML = m;
+    seconds.innerHTML = s;
+  };
+      
+  </script>
+  <script>setInterval(time, 1000);</script>
+         
+  <div id="time" style="font-weight: bold;"> 
+  <span id="id_H" style="color: red;"></span> : <span id="id_M" style="color: green;"></span> : <span id="id_S" style="color:blue;" ></span>    
+  </div>  
+  <!-- Put this script tag to the <head> of your page -->
+<script
+type="text/javascript"
+src="https://vk.com/js/api/openapi.js?168"
+></script>
+
+<!-- Put this script tag to the place, where the Subscribe block will be -->
+<div id="vk_subscribe"></div>
+<script type="text/javascript">
+ VK.Widgets.Subscribe("vk_subscribe", {}, 511910445);
+</script>
+<!-- Put this script tag to the <head> of your page -->
+  <script
+  type="text/javascript"
+  src="https://vk.com/js/api/openapi.js?168"
+  charset="windows-1251"
+></script>
+
+<!-- Put this script tag to the place, where the Post block will be -->
+<div id='vk_contact_us'></div>
+<script type="text/javascript">
+   VK.Widgets.ContactUs('vk_contact_us', {text: 'Напишите нам'}, 210778668);
+</script>
+  
+</html>
