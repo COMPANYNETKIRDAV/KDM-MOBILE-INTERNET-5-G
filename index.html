@@ -40,66 +40,11 @@
             <br>
             У НАС ВОЛНА МОБАЙЛ
             <br>
-            Чек-Лист:
-            <br>
-            ПОКА НИКТО НЕ КУПИЛ
-            <br>
             Кирилл:+7 978 749 40 42
             <br>
             Давид:+7 (978)-676-23-97
             <br>
-        </h2>
-        <form>
-            <input type="button" id="addButton" button.onclick = handleButtonClick0  value="БРОНЬ 1 ЗЕРКАЛО">
-            </form>
-            <ul id = "catlist">
-            
-            </ul>
-            <script>
-                window.onload = init;
-
-                var button = getElementById("addButton");
-                
-                function init(){
-                    var button = document.getElementById("addButton")
-                    button.onclick = handleButtonClick0;
-                }
-                
-                function handleButtonClick0() {
-                    let firstName = prompt('Как Вас зовут?');
-        let lastName = prompt('Какая ваша фамилия?');
-        alert("Добро пожаловать " + firstName + " " + lastName + " " + "Ваш код брони:23032129024438 Код брони ежедневно меняется но мы учитываем старые коды брони");
-                }
-                </script>
-                <form>
-                    <input type = "text" id="catNameInput3"  size="40"  placeholder="name">
-                    <input type="button" id="addButton3"  value="Add Name">
-                    </form>
-                    <ul id = "catlist3">
-                    
-                    </ul>
-                    <script>
-                        window.onload = init;
-
-function init(){
-    var button = document.getElementById("addButton3")
-    button.onclick = handleButtonClick3;
-}
-                        button.onclick = handleButtonClick3;
-function handleButtonClick3() {
-    var textInput = document.getElementById("catNameInput3");
-    var catName = textInput.value;
-    if(catName == ""){
-        alert("Введите имя, пожалуйста");
-    }else{
-        var ul  =  document.getElementById("catlist3");
-        var li = document.createElement("li");
-        li.innerHTML = catName;
-        ul.appendChild(li);
-        alert("Добавлено новое имя! " + catName);
-    }
-}
-                        
+        </h2>  
                         </script>
    <!-- Put this script tag to the <head> of your page -->
 <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
@@ -174,5 +119,15 @@ src="https://vk.com/js/api/openapi.js?168"
 <script type="text/javascript">
    VK.Widgets.ContactUs('vk_contact_us', {text: 'Напишите нам'}, 210778668);
 </script>
-  
+  <!-- Put this script tag to the <head> of your page -->
+<script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+<script type="text/javascript">
+  VK?.init({apiId: 0, onlyWidgets: true});
+</script>
+
+<!-- Put this div tag to the place, where the Comments block will be -->
+<div id="vk_comments"></div>
+<script type="text/javascript">
+  VK.Widgets.Comments("vk_comments", {limit: 10, attach: "*"});
+</script>
 </html>
